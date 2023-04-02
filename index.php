@@ -2,7 +2,7 @@
 require_once __DIR__.'/vendor/autoload.php';
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+$dotenv->safeLoad();
 
 $name = $_ENV['NAME'];
 $year = $_ENV['YEAR'];
